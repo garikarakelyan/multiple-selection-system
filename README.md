@@ -3,9 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5. ,[Node JS](https://nodejs.org/en/) version 10.17.0
 
 ## Description
+Multiple Selection for Countries (with `search`)
 
 ## Usage
-
+When the input field is `clicked`, the whole list is being displayed.
+When the input fields is `typed`, the according filtered countries appear in the list below.
+By clicking on an `element`, you can add it to the list of added elements.
+By clicking on the `cross`, you can remove it from the list of added elements
 
 ## Clone project from Github
 
