@@ -1,0 +1,29 @@
+.chip {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #2b2b2b;
+  border-radius: 7px;
+  color: #fff;
+  font: 600 12px/18px "Open Sans",sans-serif;
+  white-space: nowrap;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 5px;
+  &__icon {
+    cursor: pointer;
+    &-remove {
+      font-weight: 700;
+      font-size: 17px;
+      vertical-align: middle;
+      margin: 0 -2px 0 8px;
+      color: #808080;
+      cursor: pointer;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}

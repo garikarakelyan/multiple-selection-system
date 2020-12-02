@@ -1,0 +1,148 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+.multiple-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  main {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  &__search{
+    overflow: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ecf0f3;
+    color: grey;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0 15px;
+    transition: .3s ease-out;
+    z-index: 3;
+    max-width: 360px;
+    width: 100%;
+    outline: none;
+    label {
+      width: 100%;
+    }
+    &-input {
+      width: 100%;
+      min-width: 150px;
+      outline: none;
+      border: none;
+      padding: 15px 0;
+      background: #ecf0f3;
+      font-size: 15px;
+    }
+  }
+  &__countries {
+    max-height: 300px;
+    overflow-y: auto;
+    cursor: pointer;
+    &-single {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      background-color: #ECF0F3;
+      transition: 300ms;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:focus, &:hover {
+        background: #fff;
+      }
+    }
+  }
+  &__exists {
+    margin-top: 10px;
+  }
+  ::ng-deep {
+    app-chip-input {
+      display: flex;
+    }
+  }
+}
