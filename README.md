@@ -1,10 +1,20 @@
-# MultipleSelect
+# Multiple Selection
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5. ,Node version 10.17.0
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5. ,[Node JS](https://nodejs.org/en/) version 10.17.0
+
+## Description
+
+## Usage
+
 
 ## Clone project from Github
 
 git clone https://github.com/garikarakelyan/multiple-selection-system.git`
+
+##Installation
+
+Install Dependencies `npm install`
+
 
 ## Development server
 
