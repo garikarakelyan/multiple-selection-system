@@ -1,8 +1,8 @@
 <div class="multiple-select container">
-  <header>
-    <h1>Country Selection</h1>
-  </header>
-  <main>
+  <div class="multiple-select__header">
+    <h2>Country Selection</h2>
+  </div>
+  <div class="main">
     <div class="multiple-select__search">
       <div *ngIf="enteredCountries?.length">
         <app-chip-input [chipData]="enteredCountries" (remove)="onRemoveItem($event)"></app-chip-input>
@@ -18,11 +18,11 @@
         </div>
       </div>
     </div>
-  </main>
-  <footer>
+  </div>
+  <div class="multiple-select__footer">
     <div *ngIf="alreadyExist" class="multiple-select__exists">Already Exist</div>
     <div *ngIf="noResult" class="multiple-select__exists">no Result</div>
-  </footer>
+  </div>
 </div>
 
 
