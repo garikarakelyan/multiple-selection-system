@@ -1,0 +1,26 @@
+<div class="multiple-select container">
+  <div class="multiple-select__header">
+    <h2>Country Selection</h2>
+  </div>
+  <div class="main">
+    <div class="multiple-select__search">
+      <div *ngIf="chipData?.length">
+        <app-chip-input [chipData]="enteredCountries" (remove)="onRemoveItem($event)"></app-chip-input>
+      </div>
+      <label for="input">
+        <input type="text" placeholder="Search Country" id="input" class="multiple-select__search-input" #searchInput/>
+      </label>
+    </div>
+    <div class="multiple-select__countries" (clickOutside)="onClickedOutside($event)">
+      <div *ngIf="clicked">
+        <div *ngFor="let country of data" class="multiple-select__countries-single" (click)="onSelect(country)">
+          <span>{{country.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="multiple-select__footer">
+    <div *ngIf="alreadyExist" class="multiple-select__exists">Already Exist</div>
+    <div *ngIf="noResult" class="multiple-select__exists">no Result</div>
+  </div>
+</div>
